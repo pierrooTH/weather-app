@@ -64,7 +64,8 @@ const styles = StyleSheet.create({
         //margin: 20,
         paddingBottom: 30,
         borderBottomColor: 'black',
-        borderBottomWidth: 1
+        borderBottomWidth: 1,
+        backgroundColor: 'lightblue'
     },
     dayTempMinHot: {
         fontWeight: 'bold', 
@@ -89,7 +90,7 @@ const styles = StyleSheet.create({
     dayTempMaxMedium: {
         fontWeight: 'bold',
         fontSize: 25,
-        color: 'lightgreen'
+        color: '#43bb30'
     },
     dayTempMaxCold: {
         fontWeight: 'bold',
@@ -103,10 +104,10 @@ const styles = StyleSheet.create({
     dates: {
         textAlign: 'center',
         fontSize: 20,
-        padding: 20,
-        margin: 10,
+        padding: 30,
         color: '#537bcf',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        backgroundColor: 'lightblue'
     },
     description: {
         justifyContent: 'center'

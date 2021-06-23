@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
     currentTempMedium: {
         fontWeight: 'bold', 
         fontSize: 25,
-        color: "lightgreen"
+        color: "#43bb30"
         
     },
     currentTempCold: {
@@ -98,9 +98,7 @@ const styles = StyleSheet.create({
     },
     description: {
         justifyContent: 'center',
-        borderRadius: 15,
-        padding: 15,
-        backgroundColor: '#2e426a'
+
     },
     actually: {
         paddingTop: 70,
