@@ -35,8 +35,8 @@ export default function CurrentWeather({current}) {
             <Image source={{ uri: `http://openweathermap.org/img/wn/${current.weather[0].icon}@2x.png`}} style={styles.myImg} />
         </View>
         <View style={styles.temp}>
-            <Text style={styleCurrentTemperature()}>{current.temp} °C</Text>
-            <Text style={styleCurrentFeelsLikeTemperature()}>{current.feels_like} °C</Text>
+            <Text style={styleCurrentTemperature()}>{Math.round(current.temp)} °C</Text>
+            <Text style={styleCurrentFeelsLikeTemperature()}>{Math.round(current.feels_like)} °C</Text>
         </View>
       </View>
       </View>
@@ -104,12 +104,13 @@ const styles = StyleSheet.create({
     },
     actually: {
         paddingTop: 70,
+        paddingBottom: 30,
         textAlign: 'center',
         backgroundColor: '#5888ec',
         padding: 20,
         fontSize: 25,
         fontWeight: 'bold', 
-        color: '#1c1b1b'
+        color: '#f6f7f9'
     },
     img: {
         justifyContent: 'center'

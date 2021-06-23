@@ -10,7 +10,7 @@ export default function App() {
   const [currentDatas, setCurrentDatas] = useState({});
 
   useEffect(() => {
-    axios.get('https://api.openweathermap.org/data/2.5/onecall?lat=50.42893&lon=2.83183&lang=fr&units=metric&exclude=minutely,hourly&appid=8a32e4779a0d2a498915208dcdb0f8ca')
+    axios.get('https://api.openweathermap.org/data/2.5/onecall?lat=50.433&lon=2.8279&lang=fr&units=metric&exclude=minutely,hourly&appid=8a32e4779a0d2a498915208dcdb0f8ca')
   .then(res => {
     setCurrentDatas(res.data)
     console.log(currentDatas);

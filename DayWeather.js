@@ -43,8 +43,10 @@ export default function DayWeather({day}) {
             <Image source={{ uri: `http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`}} style={styles.myImg} />
             </View>
             <View style={styles.temp}>
-            <Text style={styleDayTemperatureMin()}>{day.temp.min} °C</Text>
-            <Text style={styleDayTemperatureMax()}>{day.temp.max} °C</Text>
+            <Text style={styles.min}>Min :</Text>
+            <Text style={styleDayTemperatureMin()}>{Math.round(day.temp.min)} °C</Text>
+            <Text style={styles.max}>Max :</Text>
+            <Text style={styleDayTemperatureMax()}>{Math.round(day.temp.max)} °C</Text>
             </View>
         </View>
         </View>
@@ -114,5 +116,13 @@ const styles = StyleSheet.create({
     },
     img: {
         justifyContent: 'center'
+    }, 
+    min: {
+        fontWeight: 'bold',
+        fontSize: 18,
+    }, 
+    max: {
+        fontWeight: 'bold',
+        fontSize: 18,
     }
 });
